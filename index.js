@@ -84,6 +84,9 @@ following.innerHTML = `${data.following} <svg xmlns="http://www.w3.org/2000/svg"
           .then((response) => response.json())
           .then((repos) => {
             repoContainer.innerHTML = "";
+            repos.sort((a, b) => {
+              return new Date(b.pushed_at) - new Date(a.pushed_at);
+            });
             for (let i = 0; i < 6; i++) {
  
               if (repos[i].description == null) {
