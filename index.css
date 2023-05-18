@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+svg{
+    margin-right: 1rem;
+}
+#list {
+  width: 38%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#darkMode{
+    background: none;
+    border: none;
+}
+#inputPart {
+  margin: 0;
+  width: 70%;
+}
+#input {
+  padding: 5px;
+  width: 40%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+::placeholder {
+    color: #c8c9cb;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+#search {
+  padding: 2px;
+  color: #c6cdd5;
+  background-color: #000;
+  border-radius: 6px;
+  border: 1.5px solid #57606a;
+}
+/*---------------------Main (repos section )Propreties-------------------*/
+main {
+  display: flex;
+  width: 100%;
+  padding: 3rem;
+  height: 91vh;
+}
+.dark main{
+    background-color: #282C35;
+}
+#profile {
+  width: 30%;
+}
+#repoContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+.repodata {
+  padding-bottom: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.repodata {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.repoName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #656d76;
+}
+.nameofProject {
+  color: #0969da;
+}
+.visibility {
+  font-size: 0.7rem;
+  border: 1px solid #d0d7de;
+  padding: 4px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.description {
+  color: #656d76;
+}
+.language {
+  display: flex;
+  align-items: center;
+  color: #656d76;
+}
+.circle {
+  background-color: #f83d3d;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+#mode{
+background: none;
+border: none;
+}
+/*--------------------------------- Profile Propreties-----------------------------------*/
+#userImage {
+width: 15rem;
+height: 15rem;
+border-radius: 100%;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+-ms-border-radius: 100%;
+-o-border-radius: 100%;
+border: 1px solid #d0d7de;
+background-color: #ffffff;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.dark #userImage{
+    box-shadow: 0px 5px 10px 0px rgba(254, 254, 254, 0.7);  
+}
+#profile {
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+#profileData {
+margin-top: 2rem;
+}
+#followBtn {
+width: 60%;
+border: 1px solid #d4d5d7;
+border-radius: 10px;
+padding: 0.3rem;
+margin: 1rem 3rem;
+}
+#names {
+margin-left: 3rem;
+}
+#details {
+margin-left: 3rem;
+}
+#follow {
+margin-left: 3rem;
+}
+#bio {
+margin-right: 1rem;
+}
+h6 {
+color: #656d76;
+}
+.dark h3{
+    color: #fff;
+}
+.dark h6{
+    color: #c8c8c8;
+}
+.dark #bio{
+    color: #F4F6F7;
+}
+.dark #followBtn{
+box-shadow: 0px 5px 10px 0px rgba(254, 254, 254, 0.7);  
+}
+.dark .nameofProject {
+    color: #e6f2ff;
+}
+.dark .description {
+    color: #d2e4f9;
+}
+.dark .lang{
+color: #8fadd0;
+}
+.dark .visibility{
+    color: #e1eaf4;
+}
+.dark .open {
+    background-color: #cfd1d5;
+    box-shadow: 0px 2px 8px 0px #cfd1d5;  
+}
+.dark .open li a{
+    color: #282C35;
+}
+.dark .firstNav a{
+    color:#D2E4F9;
+}
+.dark #github{
+    color: #d2e4f9;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+#userImage {
+width: 12rem;
+height: 12rem;
+margin-left: 3rem;
+}
+main {
+height: fit-content;
+display: block;
+}
+#profile {
+width: 100%;
+}
+#followBtn {
+width: 90%;
+font-size: 1.5rem;
+}
+#follow {
+font-size: 1.3rem;
+}
+#details {
+font-size: 1.3rem;
+margin-bottom: 30px;
+}
+#names {
+font-size: 1.3rem;
+}
+#nameImage {
+display: flex;
+margin-bottom: 20px;
+}
+h3 {
+font-size: 2rem;
+}
+h6 {
+font-size: 1.7rem;
+}
+#bio {
+font-size: 1.5rem;
+}
+#repoContainer {
+display: block;
+width: 100%;
+}
+.repodata {
+margin-bottom: 20px;
+}
+.description {
+font-size: 1.2rem;
+margin-top: 23px;
+}
+.nameofProject {
+font-size: 1.5rem;
+}
+.visibility {
+font-size: 1.2rem;
+}
+.language {
+font-size: 1.2rem;
+margin-top: 23px;
+}
+}
+@media (max-width: 767px) {
+#userImage {
+width: 12rem;
+height: 12rem;
+margin-left: 3rem;
+}
+main {
+height: fit-content;
+display: block;
+padding: 1rem;
+}
+  #profile {
+    width: 100%;
+  }
+  #userImage{
+    margin-left: 0;
+    width: 9rem;
+    height: 9rem;
+  }
+  #profileData{
+    margin-top: 0;
+  }
+  #followBtn {
+    width: 90%;
+    font-size: .9rem;
+    margin: 1rem 1rem;
+  }
+  #follow {
+    font-size: .7rem;
+  }
+  #details {
+    font-size: .7rem;
+    margin-bottom: 30px;
+  }
+  #names {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  #nameImage {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  #bio {
+    font-size: .8rem;
+  }
+  #repoContainer {
+    display: block;
+    width: 100%;
+  }
+  .repodata {
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: .9rem;
+    margin-top: 12px;
+  }
+  .nameofProject {
+    font-size: 1rem;
+  }
+  .visibility {
+    font-size: .8rem;
+  }
+  .language {
+    font-size: .8rem;
+    margin-top: 12px;
+  }
+}
+/*---------------------------------Humberguer menu---------------------------------*/
+#menuIcon {
+    background: none;
+    border: none;
+    width: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  #menuIcon:focus {
+    outline: none;
+  }
+  #menuIcon span {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius:2px ;
+    -webkit-border-radius:2px ;
+    -moz-border-radius:2px ;
+    -ms-border-radius:2px ;
+    -o-border-radius:2px ;
+  }
+  #searchIcon{
+      display: none;
+  }
+@media (max-width: 768px) {
+    #menuIcon {
+    display: block;
+    }
+    .firstNav{
+    display: none;
+    }
+    input{
+    width: 75%;
+    }
+    #inputPart{
+    display:flex;
+    justify-content: space-around;
+    grid-area: 2px;
+    }
+    #input{
+        width: 70%;
+    }
+    #search{
+    width: 40px;
+    height: 40px;
+    font-size: .7rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+    #searchIcon{
+    display: block;
+    height: 8%;
+    width: 8%;
+    }
+    nav{
+        padding: 1rem;
+    justify-content: space-between;
+    }
+    svg{
+        margin: 0;
+    }
+    #list{
+    width: 10%;
+    }
+    .open{
+        color: #fff;
+        background-color: #000000a3;
+        pad: 20px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 69px;
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .open li{
+    margin:10px 0 ;
+    }
+    .open li a{
+    color: #fff;
+    }
+    }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/github.svg">
+    <link rel="stylesheet" href="/winner.css" />
+    <title>GitHub</title>
+  </head>
+  <body id="body">
+    <header>
+      <nav>
+        <div>
+            <button id="mode">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#fff"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  id="github"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </button>
+          <input
+          id="searchInput"
+            type="text"
+            placeholder="Search or jump to"
+          />
+        </div>
+          <ul id="myList" class="navList">
+            <li class="firstNav"><a href="/index.html">Profile find</a></li>
+            <li class="firstNav"><a href="/html/winner.html">who is the winner?</a></li>
+          </ul>
+          <button id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+      </nav>
+    </header>
+    <main>
+      <div class="secondNav">
+        <ul class="secondUl">
+          <li class="secondUl">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-book"
+                viewBox="0 0 16 16 "
+              >
+                <path
+                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                />
+              </svg>
+              <span>Overview</span>
+            </div>
+          </li>
+          <li class="secondUl">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cast"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z"
+                />
+                <path
+                  d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z"
+                />
+              </svg>
+              <span>Repsitories</span>
+            </div>
+          </li>
+          <li class="secondUl">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-code"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
+                />
+                <path
+                  d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"
+                />
+              </svg>
+              <span>Projects</span>
+            </div>
+          </li>
+          <li class="secondUl">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+                />
+              </svg>
+              <span>Packages</span>
+            </div>
+          </li>
+          <li class="secondUl">
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="d-flex col profile1">
+              <div id="tie"></div>
+                <div id="result1">
+                    
+                </div>
+                <div class="form"><input type="text" placeholder="Enter the Name" id="input-feild-one">
+                    <button id="search-one">search</button>
+                </div>
+                <img src="/assets/white.jpg" alt="profileName" id="imageOne">
+                <p id="nameUser1">user One</p>
+                <div id="numberofRepo1"></div>
+            </div>
+            <div class="d-flex col profile1">
+                <div id="result2">
+                  
+                </div>
+                <div class="form"><input type="text" placeholder="Enter the Name" id="input-feild-two">
+                    <button id="search-two">search</button>
+                </div>
+                <img src="/assets/white.jpg" alt="profileName"id="imageTwo">
+                <p id="nameUser2">User Two</p>
+                <div id="numberofRepo2"></div>
+            </div>
+        </div>
+      </div>
+      <button id="start">Start</button>
+    </main>
+  </body>
+  <script src="/winner.js"></script>
+</html>
