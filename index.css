@@ -35,6 +35,13 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+a:hover{
+  color:#BEBFC1;
+}
+#search:hover{
+  background-color: #D2E4F9;
+  color: #000;
+}
 #darkMode{
     background: none;
     border: none;
@@ -106,6 +113,9 @@ main {
 .nameofProject {
   color: #0969da;
 }
+.nameofProject:hover{
+  text-decoration: underline;
+}
 .visibility {
   font-size: 0.7rem;
   border: 1px solid #d0d7de;
@@ -149,6 +159,11 @@ background-color: #ffffff;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+#userImage:hover{
+width: 16rem;
+height: 16rem;
+opacity: .6;
+}
 .dark #userImage{
     box-shadow: 0px 5px 10px 0px rgba(254, 254, 254, 0.7);  
 }
@@ -166,6 +181,10 @@ border: 1px solid #d4d5d7;
 border-radius: 10px;
 padding: 0.3rem;
 margin: 1rem 3rem;
+}
+#followBtn:hover{
+  background: #3a3b3c;  
+  color: #8fadd0;  
 }
 #names {
 margin-left: 3rem;
@@ -192,7 +211,11 @@ color: #656d76;
     color: #F4F6F7;
 }
 .dark #followBtn{
-box-shadow: 0px 5px 10px 0px rgba(254, 254, 254, 0.7);  
+box-shadow: 0px 5px 10px 0px rgba(254, 254, 254, 0.7);
+}
+.dark #followBtn:hover{
+  background: #c7c7c7;  
+  color: #434343;  
 }
 .dark .nameofProject {
     color: #e6f2ff;
@@ -225,6 +248,11 @@ width: 12rem;
 height: 12rem;
 margin-left: 3rem;
 }
+#userImage:hover{
+  width: 13rem;
+  height: 13rem;
+  opacity: .6;
+  }
 main {
 height: fit-content;
 display: block;
@@ -235,6 +263,10 @@ width: 100%;
 #followBtn {
 width: 90%;
 font-size: 1.5rem;
+}
+#followBtn:hover{
+  background: #3a3b3c;  
+  color: #8fadd0;  
 }
 #follow {
 font-size: 1.3rem;
@@ -287,6 +319,11 @@ width: 12rem;
 height: 12rem;
 margin-left: 3rem;
 }
+#userImage:hover{
+  width: 13rem;
+  height: 13rem;
+  opacity: .6;
+  }
 main {
 height: fit-content;
 display: block;
@@ -300,6 +337,11 @@ padding: 1rem;
     width: 9rem;
     height: 9rem;
   }
+  #userImage:hover{
+    width: 10rem;
+    height: 10rem;
+    opacity: .6;
+    }
   #profileData{
     margin-top: 0;
   }
@@ -308,12 +350,27 @@ padding: 1rem;
     font-size: .9rem;
     margin: 1rem 1rem;
   }
+  #followBtn:hover{
+    background: #3a3b3c;  
+    color: #8fadd0;  
+  }
   #follow {
     font-size: .7rem;
+    margin-left: 1rem;
   }
   #details {
     font-size: .7rem;
     margin-bottom: 30px;
+    margin-left: 1rem;
+  }
+  #copmany{
+    margin-top: .5rem;
+  }
+  #email{
+    margin-top: .5rem;
+  }
+  #location{
+    margin-top: .5rem;
   }
   #names {
     font-size: 1.3rem;
@@ -345,6 +402,9 @@ padding: 1rem;
   }
   .nameofProject {
     font-size: 1rem;
+  }
+  .nameofProject:hover{
+    text-decoration: underline;
   }
   .visibility {
     font-size: .8rem;
@@ -442,3 +502,4 @@ padding: 1rem;
     color: #fff;
     }
     }
+    

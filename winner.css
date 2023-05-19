@@ -23,6 +23,13 @@ a {
   text-decoration: none;
   color: #fff;
 }
+a:hover{
+    color:#BEBFC1;
+  }
+  .icon:hover{
+    color: #57606a;
+    font-size: 1rem;
+  }
 nav ul {
   display: flex;
   align-items: center;
@@ -68,6 +75,21 @@ input {
     color: #c8c9cb;
     font-weight: 200;
     font-size: 0.8rem;
+}
+#start:hover{
+    background-color:#c8c9cb;
+    color: #1f2328;
+    border: 1px solid ;
+}
+#search-one:hover{
+    background-color:#2a2a2a;
+    color:#c8c9cb;
+    border: 1px solid ;
+}
+#search-two:hover{
+    background-color:#2a2a2a;
+    color:#c8c9cb;
+    border: 1px solid ;
 }
 ul {
   display: flex;
